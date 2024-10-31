@@ -1,0 +1,14 @@
+version: 4.0.78
+steps:
+  - prompt: Click on "Are you a new user?"
+    commands:
+      - command: hover-text
+        text: Are you a new user?
+        description: link at the bottom of the login form
+        action: click
+  - prompt: >-
+      Assert that a registration form with fields appears.  # Use the content of
+      the file from the environment
+    commands:
+      - command: assert
+        expect: the registration form with fields appears
