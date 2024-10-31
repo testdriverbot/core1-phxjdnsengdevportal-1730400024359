@@ -1,0 +1,26 @@
+version: 4.0.78
+steps:
+  - prompt: Enter a valid username in "Login Name".
+    commands:
+      - command: hover-text
+        text: Login Name
+        description: input field for login name
+        action: click
+      - command: type
+        text: validUsername
+  - prompt: Enter a valid username in "Login Name".
+    commands:
+      - command: hover-text
+        text: Login Name
+        description: input field for login name
+        action: click
+      - command: type
+        text: validUsername123
+  - prompt: Enter a valid username in "Login Name".
+    commands:
+      - command: hover-text
+        text: Login Name
+        description: input field for login name
+        action: click
+      - command: type
+        text: validUsername123
