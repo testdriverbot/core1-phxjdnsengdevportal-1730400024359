@@ -1,0 +1,16 @@
+version: 4.0.78
+steps:
+  - prompt: Scroll to the bottom of the page.
+    commands:
+      - command: scroll
+        direction: down
+  - prompt: Scroll to the bottom of the page.
+    commands:
+      - command: scroll-until-text
+        text: Copyright 2011–2024 by NetSapiens, Inc.
+        direction: down
+  - prompt: Scroll to the bottom of the page.
+    commands:
+      - command: scroll-until-text
+        text: Privacy Policy
+        direction: down
