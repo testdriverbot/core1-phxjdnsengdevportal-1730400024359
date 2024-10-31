@@ -1,0 +1,14 @@
+version: 4.0.78
+steps:
+  - prompt: Click on the "Forgot Login Name" link.
+    commands:
+      - command: hover-text
+        text: Forgot Login Name
+        description: link to recover login name
+        action: click
+  - prompt: >-
+      Assert that a form to retrieve the login name appears.  # Use the content
+      of the file from the environment
+    commands:
+      - command: assert
+        expect: the form to retrieve the login name is visible
