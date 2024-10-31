@@ -1,0 +1,20 @@
+version: 4.0.78
+steps:
+  - prompt: Assert that the webpage loads successfully.
+    commands:
+      - command: hover-text
+        text: Log In
+        description: button on the login page
+        action: hover
+      - command: assert
+        expect: the webpage loads successfully
+  - prompt: >-
+      Assert that the logo displays on the screen.  # Use the content of the
+      file from the environment
+    commands:
+      - command: hover-text
+        text: netsapiens
+        description: logo text on the webpage
+        action: hover
+      - command: assert
+        expect: the logo displays on the screen
